@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#tabellone-gioco {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cella {
+    width: 60px;
+    height: 60px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rosso {
+    background-color: red;
+}
+
+.giallo {
+    background-color: yellow;
+}
+
+#ricomincia-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
